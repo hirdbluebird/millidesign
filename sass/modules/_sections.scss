@@ -1,0 +1,180 @@
+.frontpage-area {
+	margin-top: 70px;
+	height: calc(100vh - 70px);
+	background-size: auto 100%;
+	background-position: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.benefits-area {
+	background: #f0f0f2;
+	text-align: center;
+	.benefit-image-container {
+		border-radius: 50%;
+		background: white;
+		border: 1px solid #d5d5d7; 	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& img {
+			vertical-align: middle;
+		}	
+	}
+}
+.slider-area {
+	.slider-text {
+		position: absolute;
+		z-index: 2000;
+		top: 20%;
+		left: 50%;	
+		color: white;
+	}
+	.owl-prev,
+	.owl-next {
+		position: absolute;
+		border: 1px solid white;
+		color: white;
+		top: 45%;
+		border-radius: 50%;
+		height: 10%;
+		text-align: center;
+		font-size: 2em;
+		&:hover {
+			background: #34c9e3;
+		}
+	}
+	.owl-prev {
+		left: 3%;
+	}
+	.owl-next {
+		left: 95%;
+	}
+}
+.portfolio-area {
+	text-align: center;
+}
+.prices-area {
+	margin-bottom: 20px;
+	text-align: center;
+	.price-block-title {
+		font-weight: 100;
+		background: #f0f0f2;
+		padding: 20px 20px;
+	}
+	.price-block {
+		position: relative;
+		text-align: left;
+		display: flex;
+		justify-content: center;
+		.thouthands {
+			float: left;
+			font-size: 5em;
+		}
+		.price-add {
+			padding-top: 15px;
+			.zeros {
+				font-size: 2em;
+				text-align: left;
+			}
+			.discount {
+				color: $aqua;
+			}
+		}
+		&:before {
+			content: "";
+			border-bottom: 2px solid $aqua;
+			left: 0px;
+			bottom: 0px;
+			position: absolute;
+			width: 20%;
+		}
+	}
+	.price-includes {
+		clear: both;
+		list-style: none;
+		width: 50%;
+		margin: auto;
+		padding: 20px 0px;
+		text-align: left;
+		text-transform: uppercase;
+		height: 150px;
+		li {
+			margin: 5px 0px;
+		}
+	}
+	.buy-button {
+		display: inline-block;
+		padding: 15px 30px;
+		border: 1px solid $default-text-color;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $default-text-color;
+	}
+	.block-price-wrapper:nth-child(2),
+	.block-price-wrapper:hover {
+		.price-block-title,
+		.buy-button {
+			@include gradient($top, $bottom);
+			color: white;
+		}
+		.buy-button {
+			border: 1px solid $aqua;
+		}
+	}
+	.block-price-wrapper:nth-child(2) {
+		.price-includes {
+			padding: 40px 0px;
+			height: auto;
+		}
+	}
+	.block-price-wrapper:first-child,
+	.block-price-wrapper:last-child {
+		padding: 30px 0px;
+	}
+}
+.googlemaps-area {
+	position: relative;
+	.google-map {
+		height: 50vh;
+	}
+	form {
+		padding: 20px;
+		position: absolute;
+		z-index: 100;
+		left: 10%;
+		top: 10%;
+		text-align: center;
+		background: white;
+		text-transform: uppercase;
+		h2 {
+			padding: 0px 20px;
+			font-weight: 100;
+		}
+		input {
+			line-height: 30px;
+			margin: 5px 0px;
+			text-align: center;
+		}
+		button {
+			@include gradient($top, $bottom);
+			border: none;
+			width: 70%;
+			color: white;
+			padding: 15px 0px;
+			margin-top: 30px;
+			text-transform: uppercase;
+		}
+	}	
+}
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	p {
+		margin: 0px;
+	}
+}

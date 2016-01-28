@@ -1,0 +1,11 @@
+$aqua: #4ecbc1;
+$default-text-color: #3b3b3b;
+$top: #34c9e3;
+$bottom: #5cccaf;
+@mixin gradient($top: #34c9e3, $bottom: #5cccaf) {
+    background: blue; 
+    background: -webkit-linear-gradient($top, $bottom); 
+    background: -o-linear-gradient($top, $bottom); 
+    background: -moz-linear-gradient($top, $bottom); 
+    background: linear-gradient($top, $bottom); 
+}

@@ -1,0 +1,81 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+	.navbar-nav > li > .work-time {
+		display: none;
+		color: red;
+	}
+	body {
+		font-size: 13px;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar-nav > li > .work-time {
+		display: none;
+		color: red;
+	}
+	body {
+		font-size: 11px;
+	}
+	.mask .info {
+		margin-top: 10px;
+	}
+	.form-wrapper form {
+		padding: 0px 0px 10px 0px;
+		left: 5%;
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 11px;
+	}
+	nav {
+		text-align: center;
+	}
+	.navigation-info {
+		display: none;
+	}
+
+	.frontpage-area {
+		.main-pre-title {
+			font-size: 27px;
+			margin-bottom: 20px;
+		}
+		.main-title {
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+		.price-title {
+			color: red;
+			font-size: 20px;
+		}
+	}
+	.benefits-area {
+		.benefit-image-container {
+			width: 50%;
+			margin: auto;
+		}
+	}
+	.slider-area {
+		.owl-controls {
+			display: none;
+		}
+		.slider-text {
+			top: 0;
+			h2 {
+				font-size: 15px;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
+	.portfolio-area {
+		.mask .info {
+			margin-top: 10px;
+		}
+	}
+	.prices-area {
+		.block-price-wrapper {
+			padding: 0px 30px!important;
+		}	
+	}
+}

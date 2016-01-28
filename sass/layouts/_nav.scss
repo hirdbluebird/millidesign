@@ -1,0 +1,32 @@
+.navbar {
+	border: none;
+	text-transform: uppercase;
+	.navbar-brand {
+		padding: 0px;
+		line-height: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0px 10px;
+	}
+	.home-link {
+		color: $aqua;
+	}
+	.page-links > li > a:hover {
+		color: $aqua;
+	}
+	.page-links a:hover:before {
+		content: "";
+		border-bottom: 2px solid $aqua;
+		left: 0px;
+		bottom: 0px;
+		position: absolute;
+		width: 100%;
+	}
+	.navbar-nav > li > .callback-button {
+		margin: 10px 5px;
+		padding: 0px 5px;
+		line-height: 50px;
+		@include gradient($top,$bottom);
+		color: white!important;	
+	}
+}
